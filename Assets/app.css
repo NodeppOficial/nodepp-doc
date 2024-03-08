@@ -5,7 +5,8 @@
 * { font-family: var( --system-font ); }
 
 *::selection { 
-    background-color: black;  
+    background-color: #0000006b;  
+    border-radius: 10px;
     color: orange;
 }
 
@@ -64,7 +65,7 @@ strong {
     font-weight: bold;
 }
 
-.uk-navbar-nav a:hover, h3 {
+.uk-navbar-nav a:hover, .uk-button-link:hover, h3 {
     color: orange !important;
 }
 
