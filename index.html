@@ -157,7 +157,7 @@
         <script>
 
             for( let x of $$("[code]") ){
-                 let url = window.origin + x.getAttribute("src");
+                 let url = window.location.href + x.getAttribute("src");
                  app.fetch( url ).then(res=>{
                      x.innerHTML = marked.parse(res.data);
                      hljs.highlightAll();
@@ -166,7 +166,7 @@
 
             for( let x of $$("[exmp]") ){
                  app.addEvent(x,"click",()=>{
-                 let url = window.origin + x.getAttribute("exmp");
+                 let url = window.location.href + x.getAttribute("exmp");
                  app.fetch( url ).then(res=>{
                      $("[Test]").innerHTML = marked.parse(res.data);
                      hljs.highlightAll();
