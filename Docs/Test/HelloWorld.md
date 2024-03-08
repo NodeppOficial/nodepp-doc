@@ -4,6 +4,6 @@
 using namespace nodepp;
 
 onMain([](){
-    Console::log("Hello World");
+    console::log("Hello World");
 })
 ```

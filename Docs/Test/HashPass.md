@@ -6,9 +6,9 @@ using namespace nodepp;
 
 onMain([](){
 
-    auto ppt = crypto::hash::sha256();
+    auto ppt = crypto::hash::SHA256();
          ppt.update("Hello World!");
-    auto p = ppt.get();
+    auto p = ppt.get_hex();
 
     console::log( "sha:>", p );
 
