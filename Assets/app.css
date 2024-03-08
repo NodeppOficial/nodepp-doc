@@ -61,8 +61,11 @@ strong {
 }
 
 .uk-navbar-nav a {
-    font-weight: bold;
     color: #eee !important;
+}
+
+.uk-button, a {
+    font-weight: bold;
 }
 
 .uk-navbar-nav a:hover, h3 {
