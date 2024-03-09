@@ -9,11 +9,11 @@ event_t<> event;
 onMain([](){
 
     event.on([](){ 
-        console::done(" Hello World! "); 
+        console::done("execute too many times"); 
     });
 
     event.once([](){ 
-        console::done(" Hello World! "); 
+        console::done("execute only once"); 
     });
     
     event.emit();

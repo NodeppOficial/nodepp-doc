@@ -6,9 +6,11 @@ using namespace nodepp;
 
 onMain([](){
 
+    //define a ws server instance
     auto server = ws::server();
 
-    server.onConnect([]( ws_t cli ){
+    //onConnect WS event
+    server.onConnect.on([]( ws_t cli ){
 
         console::log("connected");
 
@@ -22,6 +24,7 @@ onMain([](){
 
     });
 
+    //Make your server accept new clients
     server.listen( "localhost", 8000, []( ... ){
         console::log("server started at ws://localhost:8000");
     });
