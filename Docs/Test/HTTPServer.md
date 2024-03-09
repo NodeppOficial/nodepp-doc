@@ -19,8 +19,8 @@ onMain([](){
 
     });
 
-    server.listen( "localhost", 8000, [=]( socket_t server ){
-        console::log("server started at http://localhost:8000");
+    server.listen( "localhost", 8000, [=]( ... ){
+        console::log("http://localhost:8000");
     });
 
 })

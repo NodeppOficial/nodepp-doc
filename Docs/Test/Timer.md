@@ -8,13 +8,13 @@ onMain([](){
 
     //Interval: a setInterval equivalent
     auto A = timer::interval([=](){ 
-        static int i=0; i++; i %= 1000;
-        console::done(" interval every: 1 second - ",i," seconds");
+        static int x=0; x++; x %= 1000;
+        console::done("Interval:",x," seconds");
     },1000);
 
     //Timeout: a setTimeout equivalent
     auto B = timer::timeout([=](){
-        console::error("timeout after: 10 seconds ");
+        console::error("timeout: 10 seconds");
     },10000);
 
     //Clear the timers

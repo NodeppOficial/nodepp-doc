@@ -23,7 +23,7 @@ onMain([](){
     });
 
     server.listen( "localhost", 8000, []( ... ){
-        console::log("server started at ws://localhost:8000");
+        console::log("ws://localhost:8000");
     });
 
 })
