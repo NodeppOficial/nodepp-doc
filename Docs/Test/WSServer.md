@@ -4,7 +4,7 @@
 
 using namespace nodepp;
 
-onMain([](){
+void onMain() {
 
     auto server = ws::server();
 
@@ -26,5 +26,5 @@ onMain([](){
         console::log("ws://localhost:8000");
     });
 
-})
+}
 ```

@@ -4,7 +4,7 @@
 
 using namespace nodepp;
 
-onMain([](){
+void onMain() {
 
     fetch_t args;
             args.method = "GET";
@@ -29,5 +29,5 @@ onMain([](){
         console::error( err );
     });
 
-})
+}
 ```

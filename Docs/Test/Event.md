@@ -4,9 +4,9 @@
 
 using namespace nodepp;
 
-event_t<> event; 
+void onMain() {
 
-onMain([](){
+    event_t<> event; 
 
     event.on([](){ 
         console::done("execute too many times"); 
@@ -18,5 +18,5 @@ onMain([](){
     
     event.emit();
 
-})
+}
 ```

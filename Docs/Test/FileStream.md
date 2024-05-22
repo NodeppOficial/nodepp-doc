@@ -5,7 +5,7 @@
 
 using namespace nodepp;
 
-onMain([](){
+void onMain() {
     
     file_t fileA ( "fileB.txt", "r" );
     file_t fileB ( "fileA.txt", "w" );
@@ -20,5 +20,5 @@ onMain([](){
 
     stream::pipe( fileA, fileB );
 
-})
+}
 ```

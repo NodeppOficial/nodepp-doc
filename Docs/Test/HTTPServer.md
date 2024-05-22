@@ -4,7 +4,7 @@
 
 using namespace nodepp;
 
-onMain([](){
+void onMain() {
 
     auto server = http::server([=]( http_t cli ){
 
@@ -23,5 +23,5 @@ onMain([](){
         console::log("http://localhost:8000");
     });
 
-})
+}
 ```

@@ -4,7 +4,7 @@
 
 using namespace nodepp;
 
-onMain([](){
+void onMain() {
 
     //Interval: a setInterval equivalent
     auto A = timer::interval([=](){ 
@@ -20,5 +20,5 @@ onMain([](){
     //Clear the timers
     timer::clear(A); timer::clear(B);
 
-})
+}
 ```

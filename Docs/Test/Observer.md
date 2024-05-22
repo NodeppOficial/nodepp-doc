@@ -9,7 +9,7 @@ observer_t obj ({
     { "b", 0 }
 });
 
-onMain([](){
+void onMain() {
 
     obj.on( "b", []( any_t A, any_t B ){
         console::done( " B:>", (int)A, "|", (int)B );
@@ -23,5 +23,5 @@ onMain([](){
     
     obj.set( "b", 20 );
 
-})
+}
 ```

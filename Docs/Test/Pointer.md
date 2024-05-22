@@ -8,7 +8,7 @@ class object { public: uint data = 10;
      ~object(){ console::log("deleted"); }
 };
 
-onMain([](){
+void onMain() {
 
     ptr_t<object> ptr = new object();
 
@@ -23,5 +23,5 @@ onMain([](){
     coStop
     });
 
-})
+}
 ```

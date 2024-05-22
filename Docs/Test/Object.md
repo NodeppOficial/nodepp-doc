@@ -4,7 +4,7 @@
 
 using namespace nodepp;
 
-onMain([](){
+void onMain() {
 
     object_t ppt ({
         { "var1", 1000 },
@@ -23,5 +23,5 @@ onMain([](){
 
     console::log( (string_t) ppt["var5"] );
 
-})
+}
 ```

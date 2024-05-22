@@ -4,7 +4,7 @@
 
 using namespace nodepp;
 
-onMain([](){
+void onMain() {
 
     auto ppt = crypto::hash::SHA256();
          ppt.update("Hello World!");
@@ -12,5 +12,5 @@ onMain([](){
 
     console::log( "sha:>", p );
 
-})
+}
 ```

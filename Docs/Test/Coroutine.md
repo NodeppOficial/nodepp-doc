@@ -3,7 +3,7 @@
 
 using namespace nodepp;
 
-onMain([](){
+void onMain() {
 
     process::add([=](){
         static int x = 10;
@@ -17,5 +17,5 @@ onMain([](){
     coStop
     });
 
-})
+}
 ```
