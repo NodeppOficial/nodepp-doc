@@ -27,7 +27,7 @@ namespace controller { namespace blog {
                 uint pos[2] = { 0, 0 };
                 string::parse(a.get(),"%u-",&pos[0]);
                 string::parse(b.get(),"%u-",&pos[1]);
-                return pos[0] <= pos[1];
+                return pos[0] >= pos[1];
             });
 
             string_t content; forEach( x, list ){
