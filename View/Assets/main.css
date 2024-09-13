@@ -1,7 +1,8 @@
 h1, h2, h3 { font-weight: 600 !important; text-transform: capitalize; }
 h1, h2, h3, h4, h5, h6, hr { padding: 0px; margin: 0px; }
 html { background-color: #00070f; }
-a { font-weight: 600; }
+a    { font-weight: 600; }
+img  { width: 100%; }
 
 a:hover { text-decoration: none; }
 
