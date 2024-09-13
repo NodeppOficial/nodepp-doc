@@ -4,7 +4,7 @@
 
 If you discover a security vulnerability in NodePP, we encourage you to report it to us right away. Please do not disclose it publicly until we have had a chance to assess and address the issue.
 
-To report a security vulnerability, please contact us at [nodepp.xyz/security](https://nodepp.xyz/security) with the following information:
+To report a security vulnerability, please contact us at [security](/security) with the following information:
 
 - A detailed description of the vulnerability
 - Steps to reproduce the issue
