@@ -1,3 +1,0 @@
-/Section/About.md   | About
-/Section/Contact.md | Contact
-/Section/Privacy.md | Privacy

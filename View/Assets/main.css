@@ -1,0 +1,129 @@
+h1, h2, h3 { font-weight: 600 !important; text-transform: capitalize; }
+h1, h2, h3, h4, h5, h6, hr { padding: 0px; margin: 0px; }
+
+html    { background-color: #00070f; }
+a:hover { text-decoration: none; }
+
+/*───────────────────────────────────────────────────────────────────*/
+
+q:before{ color: orange; }
+q:after { color: orange; }
+
+/*───────────────────────────────────────────────────────────────────*/
+
+pre > code { background-color: transparent !important; border: 1px solid #333; border-radius: 10px; }
+pre        { background-color: transparent !important; margin: 0px; border: 0px; }
+[code]     { overflow: auto; max-height: 400px; min-height: 400px; }
+
+[examples] { background-color: #00070f3f; backdrop-filter: blur(10px); }
+
+/*───────────────────────────────────────────────────────────────────*/
+
+[code] > pre        { background-color: transparent; border: 0px; margin: 0px; }
+[code] > pre > code { background-color: transparent; border: 0px; }
+
+/*───────────────────────────────────────────────────────────────────*/
+
+[name="tog"]{ display: none; }
+
+[alt] * { color: #00070f !important; }
+
+label:has(:checked) {
+    color: orange !important;
+    border-bottom: 1px solid orange !important;
+}
+
+[bg] {
+    opacity: .5; z-index: -1;
+    position: absolute;
+    left: -50px; top: 0;
+    background-repeat: no-repeat;
+    background: radial-gradient(circle, rgba(255, 165, 0, 0.5) 10%, rgba(0,0,0,0) 50%);
+}
+
+/*───────────────────────────────────────────────────────────────────*/
+
+[download-button] {
+    border-radius: 50px;
+    border: 1px orange solid;
+    backdrop-filter: blur(10px);
+}
+
+[download-button]:hover {
+    background-color: orange;
+    color: #00070f !important;
+}
+
+/*───────────────────────────────────────────────────────────────────*/
+
+.uk-button,.uk-navbar-nav a { font-weight: 600 !important; text-transform: capitalize !important; }
+
+/*───────────────────────────────────────────────────────────────────*/
+
+.uk-gap-xsmall { gap: 2px;  }
+.uk-gap-small  { gap: 5px;  }
+.uk-gap        { gap: 10px; }
+.uk-gap-medium { gap: 15px; }
+.uk-gap-large  { gap: 20px; }
+.uk-gap-xlarge { gap: 25px; }
+
+/*───────────────────────────────────────────────────────────────────*/
+
+.uk-blur { backdrop-filter: blur(10px); }
+
+/*───────────────────────────────────────────────────────────────────*/
+
+.uk-rounded-xsmall{ border-radius: 2px;  }
+.uk-rounded-small { border-radius: 5px;  }
+.uk-rounded       { border-radius: 10px; }
+.uk-rounded-medium{ border-radius: 15px; }
+.uk-rounded-large { border-radius: 20px; }
+.uk-rounded-xlarge{ border-radius: 25px; }
+
+/*───────────────────────────────────────────────────────────────────*/
+
+.uk-padding-xsmall        { padding: 5px; }
+.uk-margin-xsmall         { margin:  5px; }
+.uk-height-expand         { height: 100%; }
+.uk-child-height-expand>* { height: 100%; }
+
+/*───────────────────────────────────────────────────────────────────*/
+
+.uk-text-white { color: white   !important; }
+.uk-text-black { color: #00070f !important; }
+.uk-text-orange{ color: orange  !important; }
+.uk-text-red   { color: crimson !important; }
+.uk-text-green { color: mediumseagreen !important; }
+
+/*───────────────────────────────────────────────────────────────────*/
+
+.uk-border       { border: 1px solid #333;    }
+.uk-border-white { border: 1px solid white;   }
+.uk-border-black { border: 1px solid #00070f; }
+.uk-border-orange{ border: 1px solid orange;  }
+.uk-border-red   { border: 1px solid crimson; }
+.uk-border-green { border: 1px solid mediumseagreen; }
+
+/*───────────────────────────────────────────────────────────────────*/
+
+.uk-text-hover-white:hover { color: white   !important; }
+.uk-text-hover-black:hover { color: #00070f !important; }
+.uk-text-hover-orange:hover{ color: orange  !important; }
+.uk-text-hover-red:hover   { color: crimson !important; }
+.uk-text-hover-green:hover { color: mediumseagreen !important; }
+
+/*───────────────────────────────────────────────────────────────────*/
+
+.uk-background-white { background-color: white   !important; }
+.uk-background-black { background-color: #00070f !important; }
+.uk-background-orange{ background-color: orange  !important; }
+.uk-background-red   { background-color: crimson !important; }
+.uk-background-green { background-color: mediumseagreen !important; }
+
+/*───────────────────────────────────────────────────────────────────*/
+
+.uk-background-hover-white:hover { background-color: white   !important; }
+.uk-background-hover-black:hover { background-color: #00070f !important; }
+.uk-background-hover-orange:hover{ background-color: orange  !important; }
+.uk-background-hover-red:hover   { background-color: crimson !important; }
+.uk-background-hover-green:hover { background-color: mediumseagreen !important; }

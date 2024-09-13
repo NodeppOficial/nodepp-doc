@@ -1,0 +1,108 @@
+<img src="/Assets/back.svg" alt="background" bg uk-height-viewport="expand" >
+
+<main class="uk-flex uk-flex-middle uk-flex-center uk-child-width-1-2@m uk-flex-wrap
+             uk-animation-fade uk-animation-slide-bottom-small"
+      uk-height-viewport="expand">
+
+    <div class="uk-padding uk-child-width-expand">
+        <h1 class="uk-text-bold"> <strong class="uk-text-orange"> NODEPP </strong> | Write Once <br> Compile Everywere </h1> <br>
+        <h4> A powerful, free, and open-source C++ framework designed for developers who want to harness the full potential of asynchronous programming. </h4> <br>
+        <h4> With Nodepp, you can effortlessly build a diverse range of applications including servers, web applications, command line tools, and more. All while enjoying the benefits of 100% asynchronous execution. </h4> <br> <br>
+        <a href="/docs#installation" class="uk-button" download-button> 
+            <icon uk-icon="icon:cloud-download" class="uk-padding-xsmall"></icon> 
+            Install Nodepp LTS 
+            <icon uk-icon="icon:cloud-download" class="uk-padding-xsmall"></icon> 
+        </a> <br>
+    </div>
+
+    <div class="uk-padding uk-child-width-expand">
+
+        <div class="uk-padding-xsmall uk-border-white" examples >
+
+            <form class="uk-overflow-auto uk-text-nowrap uk-padding-small uk-padding-remove-vertical">
+                <label class="uk-button" toggle="0"> <input type="radio" name="tog" checked /> Create an HTTP Server </label>
+                <label class="uk-button" toggle="1"> <input type="radio" name="tog" />         Create an HTTP Client </label>
+                <label class="uk-button" toggle="2"> <input type="radio" name="tog" />         Create a WS Server    </label>
+                <label class="uk-button" toggle="3"> <input type="radio" name="tog" />         Create a WS Client    </label>
+                <label class="uk-button" toggle="4"> <input type="radio" name="tog" />         Streams Pipeline      </label>
+                <label class="uk-button" toggle="5"> <input type="radio" name="tog" />         Zlib                  </label>
+                <label class="uk-button" toggle="6"> <input type="radio" name="tog" />         Json                  </label>
+                <label class="uk-button" toggle="7"> <input type="radio" name="tog" />         Timers                </label>
+                <label class="uk-button" toggle="8"> <input type="radio" name="tog" />         Events                </label>
+                <label class="uk-button" toggle="9"> <input type="radio" name="tog" />         Observers             </label>
+                <label class="uk-button" toggle="10"><input type="radio" name="tog" />         Promises              </label>
+                <label class="uk-button" toggle="11"><input type="radio" name="tog" />         Coroutines            </label>
+                <label class="uk-button" toggle="12"><input type="radio" name="tog" />         Workers               </label>
+                <label class="uk-button" toggle="13"><input type="radio" name="tog" />         Smart Pointers        </label>
+            </form>
+
+            <hr>
+    
+            <div src="/Examples/1-http-server.cpp"     code        ></div>
+            <div src="/Examples/2-http-client.cpp"     code hidden ></div>
+            <div src="/Examples/3-ws-server.cpp"       code hidden ></div>
+            <div src="/Examples/4-ws-client.cpp"       code hidden ></div>
+            <div src="/Examples/5-stream-pipeline.cpp" code hidden ></div>
+            <div src="/Examples/6-zlib-pipeline.cpp"   code hidden ></div>
+            <div src="/Examples/7-json.cpp"            code hidden ></div>
+            <div src="/Examples/8-timers.cpp"          code hidden ></div>
+            <div src="/Examples/9-event.cpp"           code hidden ></div>
+            <div src="/Examples/10-observer.cpp"       code hidden ></div>
+            <div src="/Examples/11-promises.cpp"       code hidden ></div>
+            <div src="/Examples/12-coroutine.cpp"      code hidden ></div>
+            <div src="/Examples/13-workers.cpp"        code hidden ></div>
+            <div src="/Examples/14-Smart-Pointers.cpp" code hidden ></div>
+
+        </div>
+
+    </div>
+
+</main> <hr>
+
+<div class="uk-padding" > <div style="border-left: 1px solid orange; padding: 15px;">
+
+<h4><q>
+
+It's so refreshing to see such a comprehensive solution that doesn't require importing half of Canada to get a project off the ground. 
+Nodepp elegantly bridges this gap, offering a cohesive and efficient framework for tackling such complex tasks so you can get on with your own code.
+<br><br>
+But, what caught my attention most was its familiar asynchronous API, reminiscent of Node.js, (well it is in the name!), which eases the learning curve significantly for those of us who've dabbled over there previously.
+The seamless integration of many cool web technologies straight out of the box is nothing short of remarkable and a great help.
+
+</q></h4>
+
+<br>
+
+<h3 class="uk-text-right"> ─ Christian Beaumont - CEO | Founder at Substrate, Inc. ─ </h3>
+
+</div></div><hr>
+
+<script>
+    window.addEventListener( "load", ()=>{
+
+        for( let x of document.querySelectorAll("[code]") ){
+             let url = window.location.origin + x.getAttribute("src");
+
+            fetch( url ).then( async (res)=>{
+                let code = await res.text();
+                let data = `\`\`\`\n${code}\n\`\`\``;
+                x.innerHTML = marked.parse( data ); hljs.highlightAll();
+            });
+
+        }
+
+        for( let z of document.querySelectorAll("[examples]") ){
+        for( let x of        z.querySelectorAll("[toggle]")   ){
+             let y = Number( x.getAttribute("toggle") );
+
+            x.addEventListener( "click", ()=>{
+                z.querySelectorAll("[code]").forEach(( a, b )=>{
+                    if( b == y ){ a.removeAttribute("hidden"); }
+                    else        { a.setAttribute( "hidden", "" ); }
+                });
+            });
+
+        }}
+
+    });
+</script>

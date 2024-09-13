@@ -1,0 +1,44 @@
+<main class="uk-flex uk-child-height-expand" uk-height-viewport="expand">
+
+    <ul class="uk-padding-small uk-child-width-expand uk-width-1-4 uk-list uk-list-divider"
+        uk-height-viewport="expand" style="border-right: 1px solid orange; overflow: scroll;">
+        <li> <a href="#introduction"  src="/Docs/1-Introduction.md" > Introduction  </a> </li>
+        <li> <a href="#installation"  src="/Docs/2-Installation.md" > Installation  </a> </li>
+        <li> <a href="#compatibility" src="/Docs/3-Compatibility.md"> Compatibility </a> </li>
+        <li> <a href="#contribution"  src="/Docs/4-Contribution.md" > Contribution  </a> </li>
+        <li> </li>
+        <li> <a href="/guide" > Guides  </a> </li>
+    </ul>
+    
+    <div class="uk-padding uk-child-width-expand uk-width-expand" uk-height-viewport="expand"> </div>
+
+</main> <hr>
+
+<script>
+
+    function load( path ) {
+        fetch( `${window.origin}/${path}` )
+        .then( async( res )=>{
+            let data = await res.text(); 
+            let x    = document.querySelector("main>div");
+                x.innerHTML = marked.parse( data ); hljs.highlightAll();
+                UIkit.scroll( document.querySelector("body") ).scrollTo();
+        }).catch(( err )=>{
+            window.location.hash = "#introduction";
+        });
+    }
+
+    function load_content( el ) {
+        try          { load( el.getAttribute("src") ); }
+        catch( err ) { window.location.hash = "#introduction"; }
+    }
+
+    window.addEventListener( "load", ()=>{
+        load_content( document.querySelector(`a[href="${window.location.hash}"]`) );
+    });
+
+    window.addEventListener( "hashchange", ()=>{
+        load_content( document.querySelector(`a[href="${window.location.hash}"]`) );
+    });
+
+</script>

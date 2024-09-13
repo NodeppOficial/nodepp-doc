@@ -1,0 +1,36 @@
+<main class="uk-flex uk-flex-middle uk-flex-center uk-flex-wrap" uk-height-viewport="expand">
+    <div class="uk-padding uk-child-width-expand"> </div>
+</main> <hr>
+
+<script>
+
+    function load( path ) {
+        fetch( `${window.origin}/${path}` )
+        .then( async( res )=>{
+            let data = await res.text(); 
+            let x    = document.querySelector("main>div");
+                x.innerHTML = marked.parse( data ); hljs.highlightAll();
+                UIkit.scroll( document.querySelector("body") ).scrollTo();
+        }).catch(( err )=>{
+            window.location.hash = "#about";
+        });
+    }
+
+    function load_content( name ) {
+             if( name == "about" )        { load("/About/About.md"); }
+        else if( name == "license" )      { load("/About/License.md"); }
+        else if( name == "contribution" ) { load("/About/Contributing.md"); }
+        else if( name == "security" )     { load("/About/Security_Policy.md"); }
+        else if( name == "codeofconduct" ){ load("/About/Code_Of_Conduct.md"); }
+        else { window.location.hash = "#about"; }
+    }
+
+    window.addEventListener( "load", ()=>{
+        load_content( window.location.hash.slice(1) );
+    });
+
+    window.addEventListener( "hashchange", ()=>{
+        load_content( window.location.hash.slice(1) );
+    });
+
+</script>
