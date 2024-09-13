@@ -1,5 +1,7 @@
 # How to create an Asynchronous Web Server in C++ Under 40 Lines Of Code
 
+![Image](https://miro.medium.com/v2/resize:fit:720/format:webp/1*hXHAdcN0BaXEQfsZtdHRaQ.png)
+
 In this article, you will learn how to make your web server using C++ and Nodepp, allowing you to understand the fundamentals of server-side programming simply and efficiently. Get ready to immerse yourself in the exciting world of creating web servers with Nodepp!
 
 Let’s get started.
@@ -10,7 +12,7 @@ Hypertext Transfer Protocol — HTTP, is a standard for sending and receiving da
 
 if you want to know more about it, I’ll recommend you read this [page](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server).
 
-![Image1](https://miro.medium.com/v2/resize:fit:720/format:webp/0*GT1abu0XS0wCHEQT.png)
+![Image1](https://study-ccna.com/wp-content/images/http_process_explained.jpg)
 
 ## What is Nodepp?
 
