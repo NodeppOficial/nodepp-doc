@@ -1,0 +1,5 @@
+{
+    "name": "How to create an Asynchronous Web Server in C++ Under 40 Lines Of Code",
+    "img" : "https://miro.medium.com/v2/resize:fit:720/format:webp/1*hXHAdcN0BaXEQfsZtdHRaQ.png",
+    "desc": "In this article, you will learn how to make your web server using C++ and Nodepp, allowing you to understand the fundamentals of server-side programming simply and efficiently. Get ready to immerse yourself in the exciting world of creating web servers with Nodepp!"
+}

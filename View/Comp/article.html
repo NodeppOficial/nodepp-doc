@@ -1,0 +1,19 @@
+
+<main class="uk-flex uk-flex-wrap uk-padding uk-flex-center uk-flex-middle" uk-height-viewport="expand">
+      <div class="uk-width-1-2@m uk-width-2-3@s uk-flex uk-flex-column uk-flex-middle"></div>
+</main> <hr>
+
+<script>
+      let name = window.location.pathname.split('/').pop();
+
+      window.addEventListener("load",()=>{
+            fetch( `${window.origin}/Blog/${name}/README.md` )
+            .then( async( res )=>{
+                  let data = await res.text(); 
+                  let x    = document.querySelector("main>div");
+                  x.innerHTML = marked.parse( data ); hljs.highlightAll();
+            }).catch(( err )=>{
+                  window.location.hash = "#introduction";
+            });
+      });
+</script>

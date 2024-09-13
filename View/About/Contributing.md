@@ -1,4 +1,4 @@
-# Contributing to Nodepp <br><br>
+# Contributing to Nodepp <br>
 
 Thank you for your interest in contributing to **Nodepp**! Your contributions are vital for the growth and improvement of our project. This document outlines how to get started, the guidelines for contributing, and the process for submitting your contributions.
 

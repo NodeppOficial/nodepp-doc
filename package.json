@@ -1,0 +1,18 @@
+{
+    
+    "main": "./main",
+    "name": "http-cpp",
+    "version": "3.3.11",
+    "description": "Configuration control for production node deployments",
+
+    "repository": {
+      "type": "git",
+      "url" : "https://github.com/NodeppOficial/nodepp"
+    },
+
+    "scripts": { 
+      "compile": "g++ -o main main.cpp -I ./include -std=c++11",
+      "start": "./main" 
+    }
+
+}

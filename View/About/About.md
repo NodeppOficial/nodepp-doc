@@ -1,4 +1,4 @@
-# The Nodepp Project <hr><br>
+# The Nodepp Project <br><br>
 
 ## Revolutionizing the World of Programming
 

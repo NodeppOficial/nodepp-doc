@@ -7,12 +7,15 @@
 
 using namespace nodepp;
 
+#include "../Controller/blog.cpp"
+
 /*────────────────────────────────────────────────────────────────────────────*/
 
 void onMain() {
     
     auto app = express::http::add();
 
+    app.USE( "/blog", controller::blog::add() );
     app.USE( express::http::ssr( "View" ) );
 
     app.listen( "localhost", 8000, []( ... ){
