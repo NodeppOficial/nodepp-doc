@@ -11,8 +11,8 @@
     },
 
     "scripts": { 
-      "compile": "g++ -o main main.cpp -I ./include -std=c++11",
-      "start": "./main" 
+      "compile": "g++ -o main ./Services/prxy.cpp -I ./include -I ./Modules -std=c++11",
+      "start"  : "./main" 
     }
 
 }

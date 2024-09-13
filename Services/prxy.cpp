@@ -18,7 +18,7 @@ void onMain() {
     app.USE( "/blog", controller::blog::add() );
     app.USE( express::http::ssr( "View" ) );
 
-    app.listen( "localhost", 8000, []( ... ){
+    app.listen( "0.0.0.0", 8000, []( ... ){
         console::log( "-> http://localhost:8000 <-" );
     });
 
