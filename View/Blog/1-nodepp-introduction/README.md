@@ -18,16 +18,6 @@ That's why I've decided to create a C++ framework that will unleash the full pot
 
 Nodepp is an innovative framework built in C++ and designed specifically for building concurrent applications with a syntax similar to NodeJS. This combination of features makes Nodepp a powerful tool for building scalable and high-performance applications, leveraging the power of the C++ language and the ease of use offered by NodeJS. By using Nodepp, developers can take advantage of the efficiency and performance of C++ while enjoying the familiarity and convenience of the NodeJS syntax. This allows for more efficient and productive development of concurrent applications, resulting in more scalable and high-performance code. Furthermore, by combining the best of both worlds, Nodepp offers an attractive solution for those looking to leverage the strengths of C++ in the context of building concurrent applications.
 
-### Among the features of Nodepp, I can highlight:
-
-- **I have added a high-level abstraction layer to simplify application development in C++:** I have been inspired by Javascript syntax to create a framework that allows developers to write code more simply and efficiently. This approach aims not only to facilitate development in C++, but also to reduce the complexity inherent to the language, allowing programmers to focus on the logic of their applications without being overwhelmed by low-level details.
-
-- **I have implemented algorithms such as Event Loop, Coroutines, and Generators to allow developers to create asynchronous programs in C++:** Much like how one would do it in JavaScript. These algorithms provide developers with the tools to efficiently manage asynchronous tasks, allowing them to create highly efficient and responsive programs while simplifying the development process.
-
-- **I have added support for technologies such as TCP, TLS, UDP, HTTP, HTTPS and WebSocket:** Allowing developers to leverage a wide range of communication protocols for their applications. This diversity of support gives developers the flexibility to implement complete and secure networking solutions, opening up a range of possibilities for application development in Nodepp.
-
-- **I have developed a memory management system that automates the creation, modification, and deletion of elements in memory:** freeing developers from the task of managing pointers. Memory management and pointers are critical areas in software development, especially in C++.
-
 ### What can we create with Node?
 
 - HTTPS | HTTP | TCP | TLS | UDP | WebSocket servers/clients

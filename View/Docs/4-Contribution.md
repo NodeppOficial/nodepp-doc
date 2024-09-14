@@ -13,6 +13,6 @@ If you want to contribute to Nodepp, you are welcome to do so! You can contribut
 
 <hr>
 
-<a href='https://ko-fi.com/D1D8VFJZC' target='_blank'><img height='48' style='border:0px;height:48px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+<a href='https://ko-fi.com/D1D8VFJZC' target='_blank'><img height='48' style='border:0px;height:48px; width:auto;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 <br>

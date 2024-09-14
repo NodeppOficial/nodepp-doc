@@ -1,6 +1,6 @@
 # Asymmetric Encryption And Decryption With RSA
 
-To Encrypt messages use the `crypto::encrypt::RSA` from `crypto.h`
+To Encrypt messages use the `crypto::encrypt::RSA` from `crypto.h` and the `public_encrypt()` function
 
 ```cpp
 #include <nodepp/nodepp.h>
@@ -25,7 +25,7 @@ void onMain(){
 }
 ```
 
-To Encrypt messages use the `crypto::decrypt::RSA` from `crypto.h`
+To Dncrypt messages use the `crypto::decrypt::RSA` from `crypto.h` and the `private_decrypt()` function
 
 ```cpp
 #include <nodepp/nodepp.h>
