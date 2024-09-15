@@ -8,8 +8,7 @@
 - Routing & Middleware
 - Serving static files
 - Handling forms and input data
-- Cookies and sessions
-- User authentication
+- Cookies & User authentication
 
 ## What is ExpressPP?
 
