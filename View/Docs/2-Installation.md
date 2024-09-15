@@ -9,9 +9,8 @@ First, you need to install a C++ compiler and a git client in your PC.
     🐧: sudo apt install build-essential git
 ```
 
-If you are on a windows machine, We'll recommend you follow this [Tutorial](https://www.msys2.org/)
+If you are using a windows machine, We'll recommend you Install [MSYS2](https://www.msys2.org/) before.
 
----
 ### Dependencies
 
 ```bash
@@ -28,7 +27,6 @@ If you are on a windows machine, We'll recommend you follow this [Tutorial](http
 
 <br>
 
----
 ### Usage
 
 - **1st:** Clone the github repository
