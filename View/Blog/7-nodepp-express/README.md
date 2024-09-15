@@ -153,16 +153,16 @@ void onMain() {
     auto app = express::http::add();
 
     // Define a middleware
-    app.USE( []( express_http_t cli, function_t<void> next() ){
-        console::log( regex::render( 
+    app.USE( []( express_http_t cli, function_t<void> next ){
+        console::log( regex::format( 
             "Received a ${0} request from ${1}",
-            cli.method(), cli.get_peername()
+            cli.method, cli.get_peername()
         )); next();
     });
 
     // Route handler
-    app.get( "/", []( express_http_t cli ){
-        res.send("Hello, World!");
+    app.GET( "/", []( express_http_t cli ){
+        cli.send("Hello, World!");
     });
 
     app.listen( "0.0.0.0", 3000, []( ... ){
@@ -338,7 +338,7 @@ void onMain() {
         cli.send( "DONE" );
     });
 
-    app.POST("/read_cookie", []( express_http_t cli ){
+    app.GET("/read_cookie", []( express_http_t cli ){
         auto data = cookie::parse( cli.headers["Cookie"] );
         console::log( "->", data["arg"] );
         cli.send( data["arg"] );
