@@ -1,4 +1,5 @@
 # Creating the Snake Game: A Journey Through Event-Driven Programming in C++ with Nodepp and Raylib
+### Written by: Enmanuel D Becerra C
 
 ![Image1](https://miro.medium.com/v2/resize:fit:720/format:webp/1*rQCz9i25SSnwQTxlZzF-XA.png)
 
@@ -569,4 +570,4 @@ void onMain() {
 }
 ```
 
-Thanks for read this tutorial 👍
+Thanks for reading! If you enjoy reading this post, got help, knowledge, inspiration, and motivation through it. And if you want to support me — you can [“buy me a coffee.”](https://ko-fi.com/D1D8VFJZC) Your support really makes a difference ❤️

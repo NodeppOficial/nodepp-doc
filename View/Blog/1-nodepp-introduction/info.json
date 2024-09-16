@@ -1,4 +1,5 @@
 {
+    "auth": "Enmanuel D Becerra C",
     "name": "Nodepp: A Powerful Framework for Asynchronous Programming in Arduino and C++",
     "img" : "https://miro.medium.com/v2/resize:fit:720/format:webp/1*aCIXNR4c2B8dMAWQi3bPiA.jpeg",
     "desc": "Have you ever wondered why C++, despite being such a powerful language, has been left behind? Let me explain, C++ is a powerful and versatile programming language that has been widely used in a…"

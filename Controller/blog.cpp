@@ -35,13 +35,17 @@ namespace controller { namespace blog {
                 auto data = json::parse( stream::await( file ) );
                 content  += regex::format( R"(
                     <a class="uk-padding-small uk-text-weak" 
-                       href="/blog/${3}"> <h3> ${0} </h3> 
+                       href="/blog/${4}"> <h3> ${0} </h3> 
                         <img src="${2}"> </img>
-                        <p class="uk-text-normal"> ${1} </p>
+                        <p class="uk-text-normal"> ${1} <br><br> 
+                        <strong> Written by: </strong> ${3}
+                        </p>
+                        
                     </a>
                 )", data["name"].as<string_t>(),
                     data["desc"].as<string_t>(),
-                    data["img"] .as<string_t>(), x
+                    data["img"] .as<string_t>(), 
+                    data["auth"].as<string_t>(),x
                 );
             }
 

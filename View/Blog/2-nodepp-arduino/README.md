@@ -1,4 +1,5 @@
 # The Power of Multitasking with Nodepp: Unlock the Potential of Your Arduino Projects
+### Written by: Enmanuel D Becerra C
 
 ![Image1](https://miro.medium.com/v2/resize:fit:720/format:webp/1*cQw-qHmGVBrG48QETegBIw.jpeg)
 
@@ -264,4 +265,4 @@ Multitasking in Arduino UNO has opened up a range of possibilities for electroni
 
 Remember that multitasking is not always the ideal solution. You must evaluate the needs of your project and find a balance between the desired functionality and the efficiency of the code. With the practice and knowledge gained in this article, you will be able to master multitasking on Arduino UNO and take your projects to the next level.
 
-Dare to experiment and create! 
+Thanks for reading! If you enjoy reading this post, got help, knowledge, inspiration, and motivation through it. And if you want to support me — you can [“buy me a coffee.”](https://ko-fi.com/D1D8VFJZC) Your support really makes a difference ❤️

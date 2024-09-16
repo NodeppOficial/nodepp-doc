@@ -1,4 +1,5 @@
 # **Exploring Alternatives**: Pure HTML Real Time Chat Online With No Javascript
+### Written by: Enmanuel D Becerra C
 
 ![image3](https://miro.medium.com/v2/resize:fit:720/format:webp/1*gbw7pjlecv03grM5DVNGNw.png)
 
@@ -185,3 +186,5 @@ void send_message_handler( queue_t<express_http_t>& clients, string_t message ){
 🪟: time g++ -o main main.cpp -I ./include -lssl -lcrypto -lz -lws2_32 ; ./main
 🐧: time g++ -o main main.cpp -I ./include -lssl -lcrypto -lz ; ./main
 ```
+
+Thanks for reading! If you enjoy reading this post, got help, knowledge, inspiration, and motivation through it. And if you want to support me — you can [“buy me a coffee.”](https://ko-fi.com/D1D8VFJZC) Your support really makes a difference ❤️

@@ -1,4 +1,5 @@
 # Create your own online multiplayer: Small, fast, and fun with Raylib, Nodepp, and Websockets!
+### Written by: Enmanuel D Becerra C
 
 ![Image1](https://miro.medium.com/v2/resize:fit:720/format:webp/1*2EkftZukONO2_VouR6xXUQ.jpeg)
 
@@ -433,4 +434,4 @@ Congratulations! You have reached the end of this tutorial and now you have the 
 
 Remember that this is just the beginning. You can expand your game by adding new mechanics, power-ups, levels, and even chat systems to make interaction even more fun. Don’t be afraid to experiment and explore the possibilities these technologies offer.
 
-Keep creating and having fun! The world of online game development awaits you.
+Thanks for reading! If you enjoy reading this post, got help, knowledge, inspiration, and motivation through it. And if you want to support me — you can [“buy me a coffee.”](https://ko-fi.com/D1D8VFJZC) Your support really makes a difference ❤️

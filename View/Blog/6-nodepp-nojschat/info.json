@@ -1,4 +1,5 @@
 {
+    "auth": "Enmanuel D Becerra C",
     "name": "Exploring Alternatives: Building Real-Time Chat Applications Without Javascript",
     "img" : "https://miro.medium.com/v2/resize:fit:720/format:webp/1*gbw7pjlecv03grM5DVNGNw.png",
     "desc": "A truly Simple Asynchronous web chat that sends and receives messages in the browser with no reloads and no javascript, just pure HTML and HTTP chunked encoding."

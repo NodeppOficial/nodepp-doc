@@ -1,4 +1,5 @@
 # Nodepp: A Powerful Framework for Asynchronous Programming in Arduino and C++
+### Written by: Enmanuel D Becerra C
 
 Have you ever wondered why C++, despite being such a powerful language, has been left behind? Let me explain, C++ is a powerful and versatile programming language that has been widely used in a variety of fields, from operating systems to desktop applications and video games. However, despite its power, some people consider it to be left behind compared to other, more modern languages. This is due in part to the complexity and steep learning curve associated with C++, as well as the availability of newer, more user-friendly languages, such as Python and JavaScript.
 
@@ -32,3 +33,5 @@ Nodepp is an innovative framework built in C++ and designed specifically for bui
 The cool thing is that Nodepp is written in 100% C++ from scratch, without using any standard libraries. The fact that Nodepp is written in pure C++, without relying on any standard libraries, makes it highly portable and compatible with a wide range of devices. This ability to run in various environments is a significant advantage, as it allows developers to use Nodepp on a variety of platforms without worrying about compatibility.
 
 In summary, Nodepp is a powerful framework that simplifies asynchronous programming in C++. The asynchronous nature of Nodepp is central to its utility in application development. Furthermore, Nodepp offers a significant advantage by providing a syntax similar to NodeJS, making the transition easier for those familiar with the NodeJS ecosystem. This makes Nodepp an attractive tool for developers who wish to take advantage of asynchronous programming capabilities in C++ environments.
+
+Thanks for reading! If you enjoy reading this post, got help, knowledge, inspiration, and motivation through it. And if you want to support me — you can [“buy me a coffee.”](https://ko-fi.com/D1D8VFJZC) Your support really makes a difference ❤️

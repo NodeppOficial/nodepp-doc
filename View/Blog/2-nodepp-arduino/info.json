@@ -1,4 +1,5 @@
 {
+    "auth": "Enmanuel D Becerra C",
     "name": "The Power of Multitasking with Nodepp: Unlock the Potential of Your Arduino Projects",
     "img" : "https://miro.medium.com/v2/resize:fit:720/format:webp/1*cQw-qHmGVBrG48QETegBIw.jpeg",
     "desc": "The world of digital electronics is constantly evolving, and with it, the capabilities of development platforms like Arduino. One of the most important features that has seen great advancement in recent years is multitasking, or the ability to execute multiple tasks at the same time."

@@ -1,4 +1,5 @@
 {
+    "auth": "Enmanuel D Becerra C",
     "name": "A Journey Through Event-Driven Programming in C++ with Nodepp and Raylib",
     "img" : "https://miro.medium.com/v2/resize:fit:720/format:webp/1*rQCz9i25SSnwQTxlZzF-XA.png",
     "desc": "Video game programming is an exciting challenge that may seem intimidating at first, but with the right tools and a step-by-step approach, it is achievable. This time you will learn, through event-driven programming, to recreate the iconic game of the snake."

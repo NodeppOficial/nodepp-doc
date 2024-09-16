@@ -1,4 +1,5 @@
 # How to create an Asynchronous Web Server in C++ Under 40 Lines Of Code
+### Written by: Enmanuel D Becerra C
 
 ![Image](https://miro.medium.com/v2/resize:fit:720/format:webp/1*hXHAdcN0BaXEQfsZtdHRaQ.png)
 
@@ -208,4 +209,4 @@ void onMain() {
 
 As you can see, making an HTTP server in C++ is not too complicated, with Noddpp we can significantly simplify the development of complex applications in C++, such as web servers. In essence, Nodepp stands as a robust framework that makes it faster to create asynchronous applications (not just web servers) in C++. By aligning with the NodeJS syntax, we can leverage the strengths of the C++ language while embracing the easy-to-use nature and adaptability of NodeJS.
 
-thanks for read this article 👍
+Thanks for reading! If you enjoy reading this post, got help, knowledge, inspiration, and motivation through it. And if you want to support me — you can [“buy me a coffee.”](https://ko-fi.com/D1D8VFJZC) Your support really makes a difference ❤️
