@@ -3,6 +3,8 @@
 
 Welcome to the heart of NodePP, where events reign and async is king. In this series, we'll dive into the NodePP’s event-driven architecture and its async prowess. Whether you’re a newbie or a seasoned dev, get ready to unlock the secrets of NodePP. Let’s begin the journey!
 
+![Image](https://miro.medium.com/v2/resize:fit:720/format:webp/1*j4dql0qaMtxfYwVaMKZRtA.png)
+
 ## 1. Event-Driven Architecture:
 
 NodePP operates on an event-driven architecture, where tasks are managed asynchronously through an event loop. This loop efficiently handles multiple tasks simultaneously, akin to a traffic controller at a busy intersection. Events, like incoming requests or file operations, are queued and processed in a non-blocking manner, ensuring smooth execution without waiting for each task to complete. This architecture allows NodePP to handle numerous concurrent operations efficiently, making it ideal for building responsive and scalable applications.
@@ -140,6 +142,6 @@ The event loop is the beating heart of NodePP, orchestrating the execution of as
 
 - **Execution of Callbacks:** When the event loop encounters callbacks in the callback queue, it retrieves and executes them one by one. This process ensures that asynchronous tasks are executed in the order they were completed, maintaining the integrity of the program’s logic.
 
-![Image](https://uploads-ssl.webflow.com/62c6fbddb12bb54622241c3d/62c6fbddb12bb523df242285_event_loop_animation-gif.gif)
+![Image](https://miro.medium.com/v2/resize:fit:720/format:webp/1*_0CnS0bHNX7HMBLri3gNng.gif)
 
 Thanks for reading! If you enjoy reading this post, got help, knowledge, inspiration, and motivation through it. And if you want to support me — you can [“buy me a coffee.”](https://ko-fi.com/D1D8VFJZC) Your support really makes a difference ❤️
