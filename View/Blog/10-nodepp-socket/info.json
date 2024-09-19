@@ -1,0 +1,6 @@
+{
+    "auth": "Enmanuel D Becerra C",
+    "name": "Simplifying Socket Programming in C++ with Asynchronous I/O with Nodepp",
+    "img" : "https://miro.medium.com/v2/resize:fit:720/format:webp/1*a5MjmrToUv_3I2uSePDDEw.png",
+    "desc": "Simplify network programming in C++ with Nodepp, a powerful and efficient library designed for asynchronous I/O operations. Nodepp's intuitive API and non-blocking architecture make it easy to create scalable and high-performance network applications."
+}

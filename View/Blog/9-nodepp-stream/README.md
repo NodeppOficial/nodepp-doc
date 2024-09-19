@@ -11,9 +11,7 @@ In this article we'll dive deep into the world of C++ stream manipulation with N
 ## Key Topics Covered:
 
 - **Introduction to C++ Streams:** Understand the fundamental concepts of streams, including input streams, output streams, and their role in C++ programs.
-- **Nodepp Overview:** Discover the key features and benefits of Nodepp, including its performance optimizations, compatibility, and ease of use.
-- **Stream Manipulation Techniques:** Learn how to effectively manipulate streams using Nodepp, including reading, writing, formatting, and parsing data.
-- **Advanced Features:** Explore advanced topics such as stream buffering, error handling, and custom stream classes.
+- **Stream Manipulation Techniques:** Learn how to effectively manipulate streams using Nodepp, including reading, writing content to a file.
 - **Real-World Examples:** See Nodepp in action through practical examples and code snippets that illustrate its application in various scenarios.
 
 This article will help you understand streams and how to work with them. So, don’t be afraid. We can figure this out!
