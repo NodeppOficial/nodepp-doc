@@ -10,11 +10,27 @@ namespace controller { namespace blog {
     express_tcp_t add () {
         express_tcp_t app;
 
-        app.ALL( "/:name" ,[]( express_http_t cli ){
+        app.ALL( "/:name" ,[]( express_http_t cli ){ try {
+
+            auto finf = fs::readable( regex::format( "./View/Blog/${0}/info.json", cli.params["name"] ) );
+            auto info = json::parse( stream::await( finf ) );
+
+            auto host = cli.protocol.to_lower_case() + "://" + cli.headers["Host"] + cli.path;
+
             auto file = fs::readable( "./View/article.html" );
             auto data = stream::await( file );
-            cli.render( html::render( data ) );
-        });
+
+            cli.render( html::render( data , header_t({
+                { "<!--DESCRIPTION-->", info["desc"].as<string_t>() },
+                { "<!--AUTHOR-->",      info["auth"].as<string_t>() },
+                { "<!--TITLE-->",       info["name"].as<string_t>() },
+                { "<!--IMAGE-->",       info["img"].as<string_t>() },
+                { "<!--ORIGIN-->",      host },
+            }) ));
+
+        } catch(...) {
+            cli.redirect( 301, "/blog" );
+        } });
 
         app.ALL([]( express_http_t cli ){
             
