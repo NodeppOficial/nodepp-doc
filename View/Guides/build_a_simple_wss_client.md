@@ -13,26 +13,22 @@ using namespace nodepp;
 void onMain() {
 
     ssl_t ssl( "./ssl/cert.key", "./ssl/cert.crt" );
-
-    auto cli = wss::client( "wss://localhost:8000/", &ssl );
-s    
-    cli.onOpen([=](){ 
+    
+    auto client = wss::client( "wss://localhost:8000/", &ssl );
+    
+    client.onConnect([=]( wss_t cli ){ 
         
         console::log("connected"); 
 
         cli.onData([]( string_t chunk ){ 
             console::log("client:>",chunk); 
         });
-
+        
         cli.onClose([](){ 
             console::log("closed"); 
             process::exit(1);
         });
-        
-    });
 
-    cli.onError([=]( except_t err ){
-        console::log(err);
     });
 
 }
