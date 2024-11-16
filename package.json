@@ -1,7 +1,7 @@
 {
     
   "description": "Configuration control for production node deployments",
-  "name": "miPOS", "main": "./main", "version": "3.3.11",
+  "name": "nodepp-doc", "main": "./main", "version": "3.3.11",
 
   "scripts": { 
     "compile": "g++ -o main ./main.cpp -I./Modules -std=c++11",
@@ -10,7 +10,7 @@
 
   "repository": {
     "type": "git",
-    "url" : "https://github.com/NodeppOficial/nodepp"
+    "url" : "https://github.com/NodeppOficial/nodepp-doc"
   },
 
   "engines": {
